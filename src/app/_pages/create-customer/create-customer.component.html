@@ -1,1 +1,39 @@
-<p>create-customer works!</p>
+<form>
+  <div class="mb-3">
+    <label for="customerName" class="form-label">Nome</label>
+    <input
+      type="text"
+      class="form-control"
+      id="customerName"
+      name="customerName"
+      [(ngModel)]="customer.name"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+    <input
+      type="email"
+      class="form-control"
+      id="customerEmail"
+      name="customerEmail"
+      [(ngModel)]="customer.email"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="customerTel" class="form-label">Telefone</label>
+    <input
+      type="text"
+      class="form-control"
+      id="customerTel"
+      name="customerTel"
+      [(ngModel)]="customer.tel"
+    />
+    <div id="telHelp" class="form-text">Insira o telefone com DDD.</div>
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="createCustomer()">
+    CADASTRAR
+  </button>
+</form>

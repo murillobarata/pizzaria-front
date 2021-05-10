@@ -1,0 +1,11 @@
+.customers-grid {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.card {
+  width: 20vw;
+  padding: 10px;
+  margin: 5px;
+}

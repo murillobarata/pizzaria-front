@@ -1,1 +1,7 @@
-<p>customers works!</p>
+<div class="customers-grid">
+  <div class="card" *ngFor="let customer of customers">
+    <p>{{ customer.name }}</p>
+    <p>{{ customer.email }}</p>
+    <p>{{ customer.tel }}</p>
+  </div>
+</div>
